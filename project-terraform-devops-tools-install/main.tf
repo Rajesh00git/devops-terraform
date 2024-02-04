@@ -1,5 +1,5 @@
 resource "aws_instance" "web" {
-  ami                    = "ami-0866a04d72a1f5479"      #change ami id for different region
+  ami                    = "ami-0d63de463e6604d0a"      #change ami id for different region
   instance_type          = "t2.large"
   key_name               = "jenkins"              #change key name as per your setup
   vpc_security_group_ids = [aws_security_group.devops-project-veera.id]
